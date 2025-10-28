@@ -5,8 +5,11 @@ TranscribeAI is a machine learning model designed to transcribe monophonic audio
 
 ## Team
 Ruqayya Mustafa
+
 Yuki Li
+
 Md Mazharul Islam Omit
+
 Patience IZERE
 
 ## Audience
@@ -127,6 +130,7 @@ The transcription pipeline consists of:
 - **Music21**: MusicXML conversion
 - **Streamlit**: Web interface
 - **Jupyter**: Interactive development
+
 
 
 
