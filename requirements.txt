@@ -1,0 +1,45 @@
+# Core ML and Audio Processing
+librosa==0.10.1
+numpy==1.24.3
+scipy==1.11.4
+tensorflow==2.15.0
+torch==2.1.2
+torchaudio==2.1.2
+
+# MIDI and Music Processing
+pretty_midi==0.2.10
+music21==9.1.0
+mido==1.3.0
+
+# Signal Processing and Analysis
+scikit-learn==1.3.2
+matplotlib==3.8.2
+seaborn==0.13.0
+
+# Web Framework
+flask==3.0.0
+flask-cors==4.0.0
+werkzeug==3.0.1
+
+# Data Handling
+pandas==2.1.4
+pyyaml==6.0.1
+joblib==1.3.2
+
+# Jupyter and Visualization
+jupyter==1.0.0
+ipykernel==6.27.1
+plotly==5.18.0
+
+# Audio Format Support
+soundfile==0.12.1
+audioread==3.0.1
+
+# Development and Testing
+pytest==7.4.3
+black==23.12.1
+flake8==7.0.0
+
+# Additional Utilities
+tqdm==4.66.1
+python-dotenv==1.0.0
