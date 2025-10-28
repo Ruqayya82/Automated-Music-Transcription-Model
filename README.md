@@ -1,7 +1,16 @@
 # Automatic Music Transcription
 
 ## Project Overview
-A machine learning system that transcribes monophonic audio (single instrument, non-percussive) into MIDI and sheet music (MusicXML) format.
+A machine learning model that transcribes monophonic audio (single instrument, non-percussive) into MIDI and sheet music (MusicXML) format that is easy for users to follow.
+
+## Team
+Ruqayya Mustafa
+
+Yuki Li
+
+Md Mazharul Islam Omit
+
+Patience IZERE
 
 ## Features
 - Audio upload and preprocessing
@@ -112,14 +121,3 @@ The model is evaluated using:
 - F1-Score for pitch and onset detection
 - Note accuracy metrics
 - Timing precision
-
-## License
-MIT License
-
-## Contributors
-Your Name
-
-## Acknowledgments
-- Librosa documentation
-- Music21 library
-- TensorFlow/PyTorch communities
