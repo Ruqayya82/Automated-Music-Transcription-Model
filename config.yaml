@@ -1,0 +1,121 @@
+# Automatic Music Transcription Configuration
+
+# Audio Processing Settings
+audio:
+  sample_rate: 22050
+  hop_length: 512
+  n_fft: 2048
+  n_mels: 128
+  fmin: 30.0  # Minimum frequency (Hz)
+  fmax: 8000.0  # Maximum frequency (Hz)
+  window: 'hann'
+  
+# Pitch Detection Settings
+pitch:
+  method: 'pyin'  # Options: 'pyin', 'crepe', 'yin'
+  fmin: 65.0  # C2
+  fmax: 2093.0  # C7
+  frame_length: 2048
+  hop_length: 512
+  
+# Onset Detection Settings
+onset:
+  method: 'librosa'  # Options: 'librosa', 'model'
+  units: 'time'
+  backtrack: true
+  
+# Model Settings
+model:
+  name: 'pitch_onset_cnn'
+  architecture: 'cnn_lstm'
+  input_features: 'mel_spectrogram'
+  
+  # CNN parameters
+  cnn:
+    filters: [32, 64, 128]
+    kernel_size: [3, 3, 3]
+    pool_size: [2, 2, 2]
+    dropout: 0.3
+    
+  # LSTM parameters
+  lstm:
+    units: 256
+    layers: 2
+    dropout: 0.3
+    bidirectional: true
+    
+  # Output layer
+  output:
+    pitch_classes: 88  # Piano range (A0-C8)
+    onset_threshold: 0.5
+    
+# Training Settings
+training:
+  batch_size: 32
+  epochs: 100
+  learning_rate: 0.001
+  optimizer: 'adam'
+  loss: 'binary_crossentropy'
+  early_stopping:
+    patience: 10
+    min_delta: 0.001
+  
+  # Data split
+  validation_split: 0.2
+  test_split: 0.1
+  
+  # Checkpointing
+  checkpoint_dir: 'models/checkpoints'
+  save_best_only: true
+  
+# MIDI Generation Settings
+midi:
+  tempo: 120  # BPM
+  velocity: 100  # Note velocity (0-127)
+  min_note_duration: 0.05  # Minimum note duration in seconds
+  onset_threshold: 0.5
+  frame_threshold: 0.5
+  
+# MusicXML Settings
+musicxml:
+  title: 'Transcribed Score'
+  composer: 'AI Transcription'
+  time_signature: '4/4'
+  key_signature: 'C'
+  clef: 'treble'
+  
+# Web App Settings
+web:
+  host: '0.0.0.0'
+  port: 5000
+  debug: true
+  upload_folder: 'uploads'
+  output_folder: 'outputs'
+  max_file_size: 10485760  # 10 MB in bytes
+  allowed_extensions: ['wav', 'mp3', 'flac', 'ogg', 'm4a']
+  
+# Evaluation Settings
+evaluation:
+  metrics:
+    - 'f1_score'
+    - 'precision'
+    - 'recall'
+    - 'accuracy'
+  onset_tolerance: 0.05  # 50ms tolerance
+  pitch_tolerance: 50  # 50 cents
+  
+# Logging
+logging:
+  level: 'INFO'
+  format: '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+  file: 'logs/transcription.log'
+  
+# Paths
+paths:
+  data_dir: 'data'
+  raw_audio: 'data/raw'
+  processed_audio: 'data/processed'
+  ground_truth: 'data/ground_truth'
+  models_dir: 'models'
+  outputs_dir: 'outputs'
+  notebooks_dir: 'notebooks'
