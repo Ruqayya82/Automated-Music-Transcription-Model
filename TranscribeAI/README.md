@@ -1,7 +1,13 @@
 # TranscribeAI - Automatic Music Transcription
 
 ## Project Overview
-TranscribeAI is a machine learning model designed to transcribe monophonic audio (single instrument, non-percussive) into MIDI and MusicXML formats, enabling musicians to view and print sheet music from audio recordings.
+TranscribeAI is a machine learning model designed to transcribe monophonic audio (single instrument, non-percussive) into MIDI and MusicXML formats, enabling musicians to view and print easy ti follow sheet music from audio recordings.
+
+## Team
+Ruqayya Mustafa
+Yuki Li
+Md Mazharul Islam Omit
+Patience IZERE
 
 ## Audience
 - Musicians seeking to transcribe melodies
@@ -122,11 +128,5 @@ The transcription pipeline consists of:
 - **Streamlit**: Web interface
 - **Jupyter**: Interactive development
 
-## Contributing
-Contributions are welcome! Please feel free to submit issues or pull requests.
 
-## License
-MIT License
 
-## Contact
-For questions or feedback, please open an issue in the repository.
