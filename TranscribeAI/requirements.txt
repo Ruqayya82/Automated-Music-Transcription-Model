@@ -1,0 +1,27 @@
+# Core ML and Audio Processing Libraries
+numpy>=1.24.0
+scipy>=1.11.0
+librosa>=0.10.0
+soundfile>=0.12.0
+
+# Deep Learning Frameworks (optional - can be installed separately if needed)
+# tensorflow>=2.15.0
+# torch>=2.1.0
+# torchaudio>=2.1.0
+
+# MIDI and Music Processing
+pretty-midi>=0.2.10
+music21>=9.1.0
+
+# Web Interface
+streamlit>=1.29.0
+
+# Visualization and Development
+matplotlib>=3.8.0
+jupyter>=1.0.0
+ipykernel>=6.27.0
+
+# Utilities
+pandas>=2.1.0
+scikit-learn>=1.3.0
+pyyaml>=6.0
