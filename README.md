@@ -62,7 +62,6 @@ TranscribeAI/
 │   └── web_app/             # Web interface
 ├── tests/                   # Unit tests
 ├── outputs/                 # Generated MIDI and MusicXML files
-├── figma_designs/           # UI wireframes and mockups
 ├── requirements.txt         # Python dependencies
 ├── setup.py                 # Package setup
 ├── config.yaml              # Configuration file
@@ -73,8 +72,8 @@ TranscribeAI/
 
 ```bash
 # Clone the repository
-git clone <repository-url>
-cd TranscribeAI
+git clone https://github.com/Ruqayya82/Automated-Music-Transcription-Model
+cd Automated-Music-Transcription-Model
 
 # Create virtual environment
 python -m venv venv
@@ -89,7 +88,7 @@ pip install -r requirements.txt
 ### Command Line
 ```bash
 # Transcribe audio file
-python src/transcribe.py --input audio.wav --output output.mid
+python src/transcribe.py --input audio.wav --output output.midi
 
 # Generate sheet music
 python src/generate_sheet.py --input output.mid --output sheet.xml
@@ -121,3 +120,4 @@ The model is evaluated using:
 - F1-Score for pitch and onset detection
 - Note accuracy metrics
 - Timing precision
+
