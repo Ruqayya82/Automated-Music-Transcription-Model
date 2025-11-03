@@ -93,13 +93,16 @@ python src/transcribe.py --input audio.wav --output output.midi
 # Generate sheet music
 python src/generate_sheet.py --input output.mid --output sheet.xml
 ```
-
-### Web Interface
 ```bash
 # Start the web server
 python src/web_app/app.py
 
 # Navigate to http://localhost:5000
+```
+
+### Web Interface
+Figma UI link:
+https://www.figma.com/design/uZ2aI5ae3WJkzok7DBCuIg/TranscribeAI?node-id=0-1&p=f&t=I5I2pI9XsML91Khg-0
 ```
 
 ### Jupyter Notebooks
@@ -120,4 +123,5 @@ The model is evaluated using:
 - F1-Score for pitch and onset detection
 - Note accuracy metrics
 - Timing precision
+
 
