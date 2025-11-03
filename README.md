@@ -106,7 +106,8 @@ https://www.figma.com/design/uZ2aI5ae3WJkzok7DBCuIg/TranscribeAI?node-id=0-1&p=f
 ```
 
 ### Jupyter Notebooks
-```bash
+
+
 jupyter notebook notebooks/
 ```
 
@@ -123,5 +124,6 @@ The model is evaluated using:
 - F1-Score for pitch and onset detection
 - Note accuracy metrics
 - Timing precision
+
 
 
