@@ -10,8 +10,8 @@ from typing import Dict, Optional, Tuple
 import logging
 from pathlib import Path
 
-from src.audio_processing import AudioLoader, FeatureExtractor, PitchDetector, OnsetDetector
-from src.models.pitch_onset_cnn import create_model
+from audio_processing import AudioLoader, FeatureExtractor, PitchDetector, OnsetDetector
+from models.pitch_onset_cnn import create_model
 
 logger = logging.getLogger(__name__)
 

@@ -13,9 +13,9 @@ import logging
 from pathlib import Path
 from typing import Optional
 
-from src.models.transcription_model import TranscriptionModel
-from src.midi_generation import MIDICreator
-from src.musicxml_conversion import MusicXMLGenerator
+from models.transcription_model import TranscriptionModel
+from midi_generation import MIDICreator
+from musicxml_conversion import MusicXMLGenerator
 
 logger = logging.getLogger(__name__)
 
