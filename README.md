@@ -3,8 +3,11 @@
 An AI-powered music transcription system that converts audio recordings of piano and guitar music into MIDI files and MusicXML notation.
 ## Team Members
 Ruqayya Mustafa
+
 Yuki Li
+
 Patience IZERE
+
 Md Mazharul Islam 
 
 ## 🚀 Quick Start
