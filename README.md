@@ -1,14 +1,6 @@
 # 🎵 TranscribeAI
 
 An AI-powered music transcription system that converts audio recordings of piano and guitar music into MIDI files and MusicXML notation.
-## Team Members
-Ruqayya Mustafa
-
-Yuki Li
-
-Patience IZERE
-
-Md Mazharul Islam 
 
 ## 🚀 Quick Start
 
@@ -239,17 +231,16 @@ print(f"Detected {len(notes)} notes")
 # Future: Add test commands here
 ```
 
-## 📄 License
-
-[Add your license here]
 
 ## 👥 Contributors
 
-[Add contributors here]
+Ruqayya Mustafa
 
-## 🐛 Issues & Feedback
+Yuki Li
 
-Report issues or provide feedback through the project's issue tracker.
+Patience IZERE
+
+Md Mazharul Islam 
 
 ## 🙏 Acknowledgments
 
