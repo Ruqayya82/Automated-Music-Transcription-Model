@@ -59,7 +59,6 @@ python run.py
 
 5. Open your browser to: **http://localhost:5000**
 
-That's it! The app is now ready to transcribe audio files.
 
 ### Troubleshooting Installation
 
@@ -228,7 +227,7 @@ print(f"Detected {len(notes)} notes")
 
 ### Running Tests
 ```bash
-# Future: Add test commands here
+# In the Future: We Add test commands here
 ```
 
 
